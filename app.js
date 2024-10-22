@@ -2,14 +2,32 @@
 
 const diceimg = document.getElementById('dice-image');
 
+//this function reset the image
+function resetimg(){
+    diceimg.src = "./images/dice.png";
+}
+
 
 function rolldice(){
   
-    let min = 1;
-    let max = 6;
+    const min = 1;
+    const max = 7;
 
-    let roll = Math.floor(Math.random() * (max - min)) + min;
+    let randomnum = Math.floor(Math.random() * (max - min)) + min;
+       
+    if(randomnum == 1){
+        diceimg.src = './images/dice-1.png';
+    }else if(randomnum == 2){
+        diceimg.src = './images/dice-2.png';
+    }else if(randomnum == 3){
+        diceimg.src = './images/dice-3.png';
+    }else if(randomnum == 4){
+        diceimg.src = './images/dice-4.png';
+    }else if(randomnum == 5){
+        diceimg.src = './images/dice-5.png';
+    }else if(randomnum == 6){
+        diceimg.src = './images/dice-6.png'; 
+    }
 
-    console.log(roll);
-
+    setTimeout(resetimg, 3000);
 }
