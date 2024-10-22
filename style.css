@@ -26,20 +26,18 @@ body{
 
 .dice-img{
     height: 300px;
-    transition: transform 0.6s ease;
-   
 }
 
-.rolling{
-    transform: rotate(360deg);
+.heading{
+    text-align: center;
+    padding: 5px;
 }
-
 
 .btn{
     margin: 2px auto;
     display: block;
-    padding: 9px;
-    width: 8rem;
+    padding: 15px;
+    width: 10rem;
     border-radius: 20px;
     border: none;
     background-color: blueviolet;
